@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --summit-amber:  #E8923A;
+  --summit-coral:  #D4624A;
+  --summit-gold:   #F2C46D;
+  --summit-mist:   #FAF5EE;
+  --summit-plum:   #2C2340;
+  --summit-stone:  #6B5F52;
+  --summit-cloud:  #FFFDF9;
+  --summit-dusk:   #E5D9C8;
+  --summit-slate:  #1E1B2E;
+
+  /* vivid hero palette */
+  --hero-purple: #5c3a8a;
+  --hero-pink:   #9b3f7a;
+  --hero-coral:  #d4564a;
+  --hero-amber:  #e8923a;
+  --hero-gold:   #f0a840;
+}
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--summit-cloud);
+  color: var(--summit-slate);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--summit-amber);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--summit-mist); }
+::-webkit-scrollbar-thumb { background: var(--summit-dusk); border-radius: 3px; }
