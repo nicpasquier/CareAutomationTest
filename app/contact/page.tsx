@@ -24,7 +24,7 @@ export default function ContactPage() {
 
           {/* Form */}
           <div>
-            <SectionHeader eyebrow="Book a Demo" title="See CareAutomation in action" centered={false} />
+            <SectionHeader eyebrow="Book a Demo" title="See Care Automation Solutions in action" centered={false} />
             {submitted ? (
               <div className="bg-summit-amber/10 border border-summit-amber rounded-card p-8 text-center">
                 <p className="font-display font-bold text-summit-slate text-xl mb-2">✅ Request received!</p>

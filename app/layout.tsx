@@ -5,13 +5,13 @@ import Footer from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
   title: {
-    default: 'CareAutomation — Healthcare Operations Automation',
-    template: '%s | CareAutomation',
+    default: 'Care Automation Solutions — Healthcare Operations Automation',
+    template: '%s | Care Automation Solutions',
   },
   description:
-    'CareAutomation automates Revenue Cycle Management, Prior Authorization, and Referral Intake for independent clinics, hospitals, and specialty care teams.',
+    'Care Automation Solutions automates Referral Intake and Patient Engagement for independent clinics, hospitals, and specialty care teams.',
   openGraph: {
-    siteName: 'CareAutomation',
+    siteName: 'Care Automation Solutions',
     type: 'website',
     locale: 'en_US',
   },

@@ -202,7 +202,7 @@ export default function PatientEngagementPage() {
 
       <CTABanner
         title="Ready to re-engage your patients?"
-        subtitle="See how CareAutomation's Patient Engagement suite drives better outcomes with less staff effort."
+        subtitle="See how Care Automation Solutions's Patient Engagement suite drives better outcomes with less staff effort."
       />
     </>
   )
