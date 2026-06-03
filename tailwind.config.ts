@@ -21,8 +21,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ['Sora', 'sans-serif'],
-        body:    ['IBM Plex Sans', 'sans-serif'],
+        display: ['Space Grotesk', 'sans-serif'],
+        body:    ['Space Grotesk', 'sans-serif'],
       },
       boxShadow: {
         warm: '0 4px 24px rgba(180, 100, 50, 0.14)',
