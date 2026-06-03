@@ -5,7 +5,6 @@
 @tailwind utilities;
 
 :root {
-  /* Sunrise palette — warm, muted, mountain dawn */
   --summit-amber:  #C97C3A;
   --summit-coral:  #B85C3E;
   --summit-gold:   #D4A054;
@@ -15,13 +14,6 @@
   --summit-cloud:  #FDFAF5;
   --summit-dusk:   #E2D3C0;
   --summit-slate:  #221A1A;
-
-  /* Hero gradient stops — sunrise over mountain */
-  --hero-deep:    #2E1A2E;
-  --hero-rose:    #7A3040;
-  --hero-terra:   #B8562A;
-  --hero-amber:   #C97C3A;
-  --hero-gold:    #D4A054;
 }
 
 * { box-sizing: border-box; padding: 0; margin: 0; }
@@ -49,3 +41,8 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--summit-mist); }
 ::-webkit-scrollbar-thumb { background: var(--summit-dusk); border-radius: 3px; }
+
+/* Hero button hover — CSS only, no JS handlers needed */
+.hero-btn-outline:hover {
+  background: rgba(255,255,255,0.12);
+}

@@ -21,16 +21,14 @@ export default function HeroSection({
         background: 'linear-gradient(115deg, #2E1A2E 0%, #6B2B3A 28%, #A84E2A 58%, #C97C3A 80%, #D4A054 100%)',
       }}
     >
-      {/* Subtle grain texture overlay */}
+      {/* Subtle grain overlay */}
       <div
         className="absolute inset-0 opacity-[0.04]"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
           backgroundSize: '200px 200px',
         }}
       />
-
-      {/* Warm vignette at bottom */}
       <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/20 to-transparent" />
 
       <div className="relative z-10 w-full max-w-4xl mx-auto px-6 lg:px-8 py-36 text-center">
@@ -38,14 +36,8 @@ export default function HeroSection({
         {eyebrow && (
           <div className="flex justify-center mb-7">
             <span
-              className="text-white/80 text-xs font-semibold uppercase tracking-[0.22em]"
-              style={{
-                fontFamily: 'Sora, sans-serif',
-                border: '1px solid rgba(255,255,255,0.30)',
-                borderRadius: '100px',
-                padding: '6px 20px',
-                letterSpacing: '0.22em',
-              }}
+              className="text-white/80 text-xs font-semibold uppercase tracking-[0.22em] rounded-full px-5 py-1.5"
+              style={{ border: '1px solid rgba(255,255,255,0.30)', fontFamily: 'Sora, sans-serif' }}
             >
               {eyebrow}
             </span>
@@ -92,7 +84,7 @@ export default function HeroSection({
             {secondaryCta && (
               <a
                 href={secondaryCta.href}
-                className="inline-flex items-center justify-center font-semibold rounded-lg px-8 py-4 text-base transition-all duration-200 active:scale-95"
+                className="hero-btn-outline inline-flex items-center justify-center font-semibold rounded-lg px-8 py-4 text-base transition-all duration-200 active:scale-95"
                 style={{
                   border: '1.5px solid rgba(255,255,255,0.45)',
                   color: '#fff',
@@ -100,8 +92,6 @@ export default function HeroSection({
                   fontSize: '0.95rem',
                   backdropFilter: 'blur(4px)',
                 }}
-                onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.10)')}
-                onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
               >
                 {secondaryCta.label}
               </a>
