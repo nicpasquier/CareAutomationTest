@@ -75,10 +75,11 @@ export default function Header() {
           <a href="/contact#demo"
             className="inline-flex items-center justify-center text-sm font-semibold rounded-lg px-5 py-2 transition-all duration-200 hover:brightness-110"
             style={{
-              background: 'linear-gradient(135deg, #C97C3A, #B85C3E)',
-              color: '#fff',
-              fontFamily: 'Sora, sans-serif',
-              boxShadow: '0 2px 12px rgba(180,80,40,0.30)',
+                background: 'linear-gradient(135deg, #7B3FA0, #4A1E6E)',
+                color: '#fff',
+                fontFamily: 'Sora, sans-serif',
+                boxShadow: '0 2px 16px rgba(100,40,160,0.45)',
+              }}
             }}>
             Book a Demo
           </a>
