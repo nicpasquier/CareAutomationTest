@@ -79,7 +79,6 @@ export default function Header() {
                 color: '#fff',
                 fontFamily: 'Sora, sans-serif',
                 boxShadow: '0 2px 16px rgba(100,40,160,0.45)',
-              }}
             }}>
             Book a Demo
           </a>
