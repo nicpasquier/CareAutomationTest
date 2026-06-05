@@ -24,7 +24,7 @@ export default function AboutPage() {
       <HeroSection
         eyebrow="About Care Automation Solutions"
         title="Patient outreach, from Intake to Follow-up."
-        subtitle="We built Care Automation Solutions to provide a premium patient experience, and return hours per week to great physicians & front office staff."
+        subtitle="We built Care Automation to provide a premium patient experience,  and return hours per week to physicians & front office staff."
         centered
       />
 
