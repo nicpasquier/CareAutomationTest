@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 }
 
 const VALUES = [
-  { Icon: Shield,     title: 'Transparency',  description: 'Clear pricing, honest results, and open communication with every client — always.' },
-  { Icon: Lightbulb, title: 'Innovation',     description: 'We build AI tools that stay ahead of payer complexity, coding changes, and workflow evolution.' },
+  { Icon: Shield,     title: 'Transparency',  description: 'Clear pricing, honest results, and open communication with every client.' },
+  { Icon: Lightbulb, title: 'Innovation',     description: 'We build AI tools that connect patients, and provide next-level workflow evolution.' },
   { Icon: Heart,     title: 'Accessibility', description: 'Enterprise-grade automation shouldn\'t require enterprise-sized budgets. We serve practices of every size.' },
-  { Icon: Users,     title: 'Partnership',   description: 'We embed ourselves in your workflow and measure our success by yours.' },
+  { Icon: Users,     title: 'Partnership',   description: 'We embed ourselves in your workflow, and measure our success by yours.' },
 ]
 
 export default function AboutPage() {
@@ -23,8 +23,8 @@ export default function AboutPage() {
     <>
       <HeroSection
         eyebrow="About Care Automation Solutions"
-        title="Patient outreach, from Intake to Follow-up."
-        subtitle="We built Care Automation to provide a premium patient experience,  and return hours per week to physicians & front office staff."
+        title="Patient Outreach, from Intake to Follow-up." 
+        subtitle="We built Care Automation to provide a premium patient experience,  and return hours per week to physicians & their front office staff."
         centered
       />
 
@@ -33,10 +33,10 @@ export default function AboutPage() {
           <div>
             <p className="text-summit-amber font-semibold text-xs uppercase tracking-widest mb-3">Our Story</p>
             <h2 className="font-display font-bold text-summit-slate text-3xl mb-6">
-              Built by people who've lived inside healthcare operations
+              Built by people who have lived inside healthcare operations
             </h2>
             <p className="text-summit-stone leading-relaxed mb-4">
-              Our founders spent years working inside health systems — managing referral pipelines, fighting prior auth denials, and watching talented clinical staff burn out on administrative work that should have been automated years ago.
+              Our founders spent years working alongside health systems — managing referral pipelines, patient expectations, and watching talented clinical staff burn out on administrative work that should have been automated years ago.
             </p>
             <p className="text-summit-stone leading-relaxed">
               Care Automation Solutions was built to fix that. We combine deep healthcare domain expertise with modern AI to automate the workflows that consume operations teams — without disrupting existing EHR setups or requiring large IT investments.
@@ -60,9 +60,9 @@ export default function AboutPage() {
         <SectionHeader eyebrow="Our Team" title="The people behind the platform" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
-            { name: 'Alex Rivera',  role: 'CEO & Co-founder' },
-            { name: 'Morgan Patel', role: 'CTO & Co-founder' },
-            { name: 'Jordan Kim',   role: 'Head of Product' },
+            { name: 'Nic Pasquier',  role: 'CEO & Co-founder' },
+            { name: 'Doug Dimmadome', role: 'CTO & Co-founder' },
+            { name: 'Billy Bramshaw',   role: 'Head of Product' },
           ].map(({ name, role }) => (
             <div key={name} className="bg-summit-mist rounded-card p-6 border border-summit-dusk text-center">
               <div className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-white font-bold text-2xl"
