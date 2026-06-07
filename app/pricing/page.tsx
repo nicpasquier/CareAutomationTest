@@ -12,7 +12,7 @@ const FAQ_ITEMS = [
   { question: 'Is there a free trial?',           answer: 'Yes. Professional plan includes a 14-day free trial, no credit card required.' },
   { question: 'Can I change plans later?',         answer: 'Absolutely. You can upgrade or downgrade at any time from your account dashboard.' },
   { question: 'What EHR systems do you integrate with?', answer: 'We support Epic, Athenahealth, Cerner, eClinicalWorks, and most major EHR platforms via HL7/FHIR APIs.' },
-  { question: 'Is my patient data secure?',        answer: 'Yes. CareAutomation is HIPAA-compliant. All data is encrypted in transit and at rest. We sign BAAs with all customers.' },
+  { question: 'Is my patient data secure?',        answer: 'Yes. Care Automation Solutions is HIPAA-compliant. All data is encrypted in transit and at rest. We sign BAAs with all customers.' },
   { question: 'What does "full operational system reset" mean?', answer: 'Our Enterprise tier includes a full audit and rebuild of your RCM, prior auth, and referral workflows from the ground up, managed by our implementation team.' },
   { question: 'Do you offer annual discounts?',    answer: 'Yes — annual plans are approximately 18% less than monthly billing.' },
 ]

@@ -3,18 +3,15 @@ export const NAV_LINKS = [
   {
     label: 'Solution Overview',
     dropdown: [
-      { label: 'Revenue Cycle Management',      href: '/solutions/revenue-cycle-management' },
-      { label: 'Prior Authorization Processing', href: '/solutions/prior-authorization-processing' },
-      { label: 'Referral Intake Management',     href: '/solutions/referral-intake-management' },
+      { label: 'Referral Intake Management',      href: '/solutions/referral-intake-management' },
+      { label: 'Patient Outreach Automation',     href: '/solutions/patient-outreach-automation' },
     ],
   },
   {
     label: 'Products',
     dropdown: [
-      { label: 'RCM Automation',                  href: '/products/rcm-automation' },
-      { label: 'Prior Auth & Claim Management AI', href: '/products/prior-auth-claim-management-ai' },
-      { label: 'Referral Intake AI',               href: '/products/referral-intake-ai' },
-      { label: 'Patient Engagement',               href: '/products/patient-engagement' },
+      { label: 'Referral Intake AI',   href: '/products/referral-intake-ai' },
+      { label: 'Patient Engagement',   href: '/products/patient-engagement' },
     ],
   },
   { label: 'Pricing',    href: '/pricing' },
@@ -27,9 +24,9 @@ export const PRICING_TIERS = [
     price: { monthly: 299, annual: 249 },
     description: 'For small independent clinics getting started with automation.',
     features: [
-      'Single agent process',
-      'Up to 500 claims/month',
-      'Prior auth tracking',
+      'Referral Intake AI',
+      'Up to 300 referrals/month',
+      'SMS patient reminders',
       'Email support',
       'Standard reporting dashboard',
     ],
@@ -42,13 +39,12 @@ export const PRICING_TIERS = [
     description: 'For growing practices that need multi-workflow automation.',
     features: [
       'All Starter features',
-      'Up to 2,500 claims/month',
-      'Prior Auth & Referral AI',
+      'Unlimited referrals',
+      'Patient Engagement suite (SMS + Email)',
+      'Tokenized Web Companion',
       'EHR integration (Epic, Athena)',
-      'Patient Engagement (SMS + Email)',
       'Priority support',
       'Advanced analytics',
-      'Custom payer rules',
     ],
     cta: 'Start Free Trial',
     highlighted: true,
@@ -56,14 +52,13 @@ export const PRICING_TIERS = [
   {
     name: 'Enterprise',
     price: { monthly: null, annual: null },
-    description: 'Full operational system reset for large health systems.',
+    description: 'Full operational automation for large health systems.',
     features: [
       'All Professional features',
-      'Unlimited claims',
-      'Full RCM Automation suite',
-      'Tokenized Web Companion (2FA)',
+      'Unlimited everything',
+      'Two-factor patient auth (2FA)',
       'Dedicated success manager',
-      'Custom integrations',
+      'Custom EHR integrations',
       'SLA guarantees',
       'On-site onboarding',
     ],
@@ -74,42 +69,24 @@ export const PRICING_TIERS = [
 
 export const SOLUTIONS = [
   {
-    title: 'Revenue Cycle Management',
-    slug: 'revenue-cycle-management',
-    summary: 'Eliminate billing errors and accelerate reimbursement with end-to-end RCM automation.',
-    icon: 'CircleDollarSign',
-  },
-  {
-    title: 'Prior Authorization Processing',
-    slug: 'prior-authorization-processing',
-    summary: 'Reduce prior auth delays from days to minutes with intelligent AI processing.',
-    icon: 'ClipboardCheck',
-  },
-  {
     title: 'Referral Intake Management',
     slug: 'referral-intake-management',
-    summary: 'Capture every referral, eliminate drop-off, and accelerate patient intake.',
+    summary: 'Capture every referral, eliminate drop-off, and accelerate patient intake automatically.',
     icon: 'UserPlus',
+  },
+  {
+    title: 'Patient Outreach Automation',
+    slug: 'patient-outreach-automation',
+    summary: 'Reach patients via SMS, secure email, and tokenized web flows — before and after every visit.',
+    icon: 'MessageSquare',
   },
 ]
 
 export const PRODUCTS = [
   {
-    title: 'RCM Automation',
-    slug: 'rcm-automation',
-    badge: 'AI-Powered',
-    tagline: 'From claim creation to payment posting — fully automated.',
-  },
-  {
-    title: 'Prior Auth & Claim Management AI',
-    slug: 'prior-auth-claim-management-ai',
-    badge: 'AI-Powered',
-    tagline: 'Intelligent prior auth submission and real-time claim tracking.',
-  },
-  {
     title: 'Referral Intake AI',
     slug: 'referral-intake-ai',
-    badge: 'New',
+    badge: 'AI-Powered',
     tagline: 'Automated referral capture, routing, and intake coordination.',
   },
   {
@@ -123,13 +100,6 @@ export const PRODUCTS = [
 export const TESTIMONIALS = [
   {
     quote:
-      'CareAutomation cut our prior auth processing time by 80%. Our staff can finally focus on patients, not paperwork.',
-    name: 'Dr. Sarah Nguyen',
-    title: 'Medical Director',
-    org: 'Riverside Specialty Clinic',
-  },
-  {
-    quote:
       'We used to lose 15% of referrals in the intake process. Since implementing Referral Intake AI, that number is near zero.',
     name: 'James Okafor',
     title: 'Operations Manager',
@@ -137,7 +107,14 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      'The RCM Automation suite paid for itself within 60 days. Denial rates dropped and cash flow improved immediately.',
+      'Patient no-show rates dropped by 38% within the first month of using the Patient Engagement suite. The tokenized links are something our patients actually use.',
+    name: 'Dr. Sarah Nguyen',
+    title: 'Medical Director',
+    org: 'Riverside Specialty Clinic',
+  },
+  {
+    quote:
+      'Care Automation Solutions paid for itself in 60 days. The referral pipeline visibility alone changed how we run our operations.',
     name: 'Linda Torres',
     title: 'CFO',
     org: 'Westlake Independent Health System',
@@ -145,9 +122,9 @@ export const TESTIMONIALS = [
 ]
 
 export const SITE_CONFIG = {
-  name: 'CareAutomation',
+  name: 'Care Automation Solutions',
   domain: 'careautomation.net',
   email: 'hello@careautomation.net',
   phone: '1-800-CARE-AUT',
-  tagline: 'Automate the Workflow. Elevate the Care.',
+  tagline: 'The Automation Behind Exceptional Care.',
 }

@@ -8,7 +8,7 @@ interface CTABannerProps {
 
 export default function CTABanner({
   title    = 'Ready to transform your clinic operations?',
-  subtitle = 'Book a 30-minute demo and see CareAutomation in action.',
+  subtitle = 'Book a 30-minute demo and see Care Automation Solutions in action.',
   variant  = 'plum',
 }: CTABannerProps) {
   const bg = variant === 'plum' ? 'bg-summit-plum' : 'bg-summit-amber'

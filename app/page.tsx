@@ -1,67 +1,37 @@
-import HeroSection       from '@/components/sections/HeroSection'
-import SectionWrapper    from '@/components/sections/SectionWrapper'
-import SectionHeader     from '@/components/sections/SectionHeader'
-import SolutionCard      from '@/components/sections/SolutionCard'
-import FeatureCard       from '@/components/sections/FeatureCard'
-import TestimonialCard   from '@/components/sections/TestimonialCard'
-import CTABanner         from '@/components/sections/CTABanner'
-import PricingCard       from '@/components/sections/PricingCard'
-import Button            from '@/components/ui/Button'
+import HeroSection     from '@/components/sections/HeroSection'
+import SectionWrapper  from '@/components/sections/SectionWrapper'
+import SectionHeader   from '@/components/sections/SectionHeader'
+import SolutionCard    from '@/components/sections/SolutionCard'
+import FeatureCard     from '@/components/sections/FeatureCard'
+import TestimonialCard from '@/components/sections/TestimonialCard'
+import CTABanner       from '@/components/sections/CTABanner'
+import PricingCard     from '@/components/sections/PricingCard'
+import Button          from '@/components/ui/Button'
 import { SOLUTIONS, TESTIMONIALS, PRICING_TIERS } from '@/lib/constants'
-import {
-  CircleDollarSign, ClipboardCheck, UserPlus,
-  ShieldCheck, Zap, TrendingUp, MessageSquare,
-} from 'lucide-react'
+import { UserPlus, MessageSquare, Zap, TrendingUp, Bell } from 'lucide-react'
 
 const ICON_MAP: Record<string, React.ElementType> = {
-  CircleDollarSign, ClipboardCheck, UserPlus,
+  UserPlus,
+  MessageSquare,
 }
-
-const PRODUCTS_PREVIEW = [
-  {
-    Icon: CircleDollarSign,
-    title: 'RCM Automation',
-    summary: 'End-to-end revenue cycle automation — from charge capture to payment posting.',
-    href: '/products/rcm-automation',
-  },
-  {
-    Icon: ClipboardCheck,
-    title: 'Prior Auth & Claim Management AI',
-    summary: 'Intelligent prior auth submission and real-time payer claim tracking.',
-    href: '/products/prior-auth-claim-management-ai',
-  },
-  {
-    Icon: UserPlus,
-    title: 'Referral Intake AI',
-    summary: 'Capture every referral, validate completeness, and schedule automatically.',
-    href: '/products/referral-intake-ai',
-  },
-  {
-    Icon: MessageSquare,
-    title: 'Patient Engagement',
-    summary: 'SMS, email, voice, and secure tokenized web flows — no app downloads required.',
-    href: '/products/patient-engagement',
-  },
-]
 
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
       <HeroSection
         eyebrow="Healthcare Operations Automation"
-        title="Automate the Workflow. Elevate the Care."
-        subtitle="CareAutomation reduces administrative burden for clinics and health systems — so your team can focus on delivering exceptional patient care, not wrestling with paperwork."
+        title="The Automation Behind Exceptional Care."
+        subtitle="Care Automation Solutions reduces administrative burden for clinics and health systems — so your team can focus on delivering exceptional patient care, not wrestling with paperwork."
         primaryCta={{ label: 'Book a Demo', href: '/contact#demo' }}
         secondaryCta={{ label: 'See How It Works', href: '/solutions' }}
       />
 
       {/* Trust Bar */}
       <SectionWrapper bg="plum" className="py-8 md:py-10">
-        <p className="text-center text-summit-dusk/70 text-sm font-medium uppercase tracking-widest mb-6">
-          Trusted by independent clinics, specialty practices, and regional health systems
+        <p className="text-center text-summit-dusk/60 text-xs font-semibold uppercase tracking-widest mb-5">
+          Trusted by independent clinics, specialty practices &amp; regional health systems
         </p>
-        <div className="flex flex-wrap justify-center gap-8 opacity-50">
+        <div className="flex flex-wrap justify-center gap-8 opacity-40">
           {['Riverside Clinic', 'Summit Regional', 'Westlake Health', 'Apex Specialty', 'NorthStar Medical'].map((name) => (
             <span key={name} className="text-white font-display font-semibold text-sm">{name}</span>
           ))}
@@ -71,30 +41,25 @@ export default function HomePage() {
       {/* Value Props */}
       <SectionWrapper bg="mist">
         <SectionHeader
-          eyebrow="Why CareAutomation"
-          title="The administrative burden is breaking healthcare"
-          subtitle="Clinics lose thousands of hours and millions in revenue to manual workflows. We fix that."
+          eyebrow="Why Care Automation Solutions"
+          title="Administrative drag is costing you patients and revenue"
+          subtitle="Manual workflows create invisible losses every day. We make them visible — then eliminate them."
         />
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <FeatureCard
             Icon={Zap}
-            title="Prior Auth in Minutes"
-            description="Average prior auth takes 2 days manually. Our AI processes submissions in under 4 minutes."
+            title="Referrals That Don't Fall Through"
+            description="Up to 40% of referrals are lost in traditional intake. Referral Intake AI captures, validates, and schedules every single one automatically."
           />
           <FeatureCard
             Icon={TrendingUp}
-            title="Zero Referral Drop-off"
-            description="Up to 40% of referrals are lost in manual intake. Referral Intake AI captures every one."
+            title="Patients Who Actually Show Up"
+            description="Tokenized web flows and smart reminders cut no-show rates by up to 40% — without requiring patients to download anything or remember a password."
           />
           <FeatureCard
-            Icon={ShieldCheck}
-            title="Billing Errors Prevented"
-            description="Claim denials cost practices 3–5% of revenue. RCM Automation slashes denial rates."
-          />
-          <FeatureCard
-            Icon={MessageSquare}
-            title="Patients Actually Respond"
-            description="Tokenized web flows see 3× higher patient completion rates than traditional portals."
+            Icon={Bell}
+            title="Engagement That Feels Human"
+            description="SMS, email, and AI voice outreach timed to the right moment in the patient journey. Personalized at scale, compliant by design."
           />
         </div>
       </SectionWrapper>
@@ -103,10 +68,10 @@ export default function HomePage() {
       <SectionWrapper bg="cloud">
         <SectionHeader
           eyebrow="Solutions"
-          title="Purpose-built for clinic operations"
-          subtitle="Three focused automation solutions that address the most critical pain points in healthcare administration."
+          title="Two focused solutions. Real operational impact."
+          subtitle="Built for the workflows that consume the most time in clinical operations."
         />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {SOLUTIONS.map((s) => {
             const Icon = ICON_MAP[s.icon]
             return (
@@ -116,26 +81,12 @@ export default function HomePage() {
         </div>
       </SectionWrapper>
 
-      {/* Products Preview — 4 cards */}
+      {/* Pricing */}
       <SectionWrapper bg="mist">
-        <SectionHeader
-          eyebrow="Products"
-          title="The tools powering your operations"
-          subtitle="Four AI-powered products built to work together — or independently alongside your existing systems."
-        />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-          {PRODUCTS_PREVIEW.map((p) => (
-            <SolutionCard key={p.href} {...p} />
-          ))}
-        </div>
-      </SectionWrapper>
-
-      {/* Pricing Preview */}
-      <SectionWrapper bg="cloud">
         <SectionHeader
           eyebrow="Pricing"
           title="Plans for every stage of your practice"
-          subtitle="Transparent monthly pricing, no surprises."
+          subtitle="Transparent monthly pricing. No implementation fees. No surprises."
         />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {PRICING_TIERS.map((tier) => (
@@ -148,7 +99,7 @@ export default function HomePage() {
       </SectionWrapper>
 
       {/* Testimonials */}
-      <SectionWrapper bg="mist">
+      <SectionWrapper bg="cloud">
         <SectionHeader eyebrow="Customer Stories" title="Real results from real clinics" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {TESTIMONIALS.map((t) => <TestimonialCard key={t.name} {...t} />)}
